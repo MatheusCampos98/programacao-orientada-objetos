@@ -29,6 +29,6 @@ public class Main {
         String formaPagamento = sc.nextLine();
         saldo.addGasto(tipoGasto, dataGasto, valorGasto, formaPagamento);
 
-        System.out.print("\n" + saldo.mostraBalanco());
+        saldo.mostraBalanco();
     }
 }

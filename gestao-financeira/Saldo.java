@@ -6,8 +6,8 @@ public class Saldo {
     private List<Gasto> gastos;
 
     public Saldo() {
-        this.ganhos = new ArrayList<>();
-        this.gastos = new ArrayList<>();
+        this.ganhos = new ArrayList<Ganho>();
+        this.gastos = new ArrayList<Gasto>();
     }
 
     public void addGanho(String tipo, String data, double valor) {
@@ -43,7 +43,7 @@ public class Saldo {
     }
 
     public void mostraBalanco() {
-        System.out.println("-----Balanço-----");
+        System.out.println("-----Balanco-----");
         System.out.println("Total de ganhos: R$" + calculaTotalGanhos());
         System.out.println("Total de gastos: R$" + calculaTotalGastos());
         System.out.println("Saldo final: R$" + calculaSaldo());
